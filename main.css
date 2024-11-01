@@ -1,0 +1,136 @@
+/* SECTION 1 */
+
+.section1 {
+    display: flex;
+    /* width: 200px; */
+    padding: 20px;
+}
+
+.arroz-img {
+    display: flex;
+    width: 439px;
+    margin-left: 20px;
+    border-radius: 9px;
+}
+
+.right1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 60px;
+    color: #5d032a;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.author {
+    display: flex;
+    font-size: 12px;
+    margin-bottom: auto;
+}
+
+/* SECTION 2 */
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+.section2,
+.section3 {
+    margin: 50px 20px 50px 20px;
+    line-height: 25px;
+    color: #5d032a;
+}
+
+.description {
+    margin-bottom: 10px;
+    font-weight: lighter;
+
+}
+
+.ingredientes {
+    background-color: #FFD8F5;
+    color: #ad215b;
+    width: 600px;
+    ;
+    list-style: circle;
+
+    padding: 20px 20px 20px 30px;
+    border-radius: 9px;
+
+}
+
+.ingredientes li {
+    background-color: #FFD8F5;
+    list-style: inside;
+}
+
+
+/* INGREDIENTES [SECTION 3] + [ASIDE] */
+
+.section3 {
+    display: flex;
+    gap: 30px;
+}
+
+.section-ingr {
+    width: 800px;
+}
+
+/* ASIDE */
+
+h3 {
+    color: #092A0F;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.nevera-txt {
+    color: #092A0F;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.nevera {
+    width: 263px;
+    height: 263;
+}
+
+.as-1 {
+    display: block;
+    justify-items: center;
+    margin-bottom: 60px;
+}
+
+.as-2 {
+    display: block;
+    justify-items: center;
+    margin-bottom: 20px;
+
+}
+
+.h3-otras {
+    margin-bottom: 20px;
+}
+
+.otras-recetas {
+    width: 263px;
+    height: 263;
+}
+
+.otras-txt {
+    color: #092A0F;
+    font-size: small;
+    margin-bottom: 20px;
+}
+

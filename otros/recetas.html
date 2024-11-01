@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            list-style: none;
+            border-style: none;
+        }
+
+
+        body {
+            font-family: poppins;
+            font-size: medium;
+            font-style: normal;
+            background-color: #F6F0E4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+            background-color: #F6F0E4;
+            /* gap: 20px; */
+        }
+
+
+        /* MENU NAV */
+        .logo {
+            padding: 16px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #64022D;
+            background-color: #F6F0E4;
+            padding: 20px;
+        }
+
+        .menu-nav {
+            display: flex;
+            gap: 72px;
+        }
+
+        .menu-nav li:hover {
+            font: bold;
+            transform: scale(1.15);
+            transition: all 300ms;
+            position: relative;
+            color: #F15333;
+        }
+
+        .botones {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #sesion-boton {
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            background-color: #64022D;
+            border-radius: 20px;
+            color: #F6F0E4;
+            transition: background-color 0.3s ease;
+            font-family: poppins;
+        }
+
+        #sesion-boton:hover {
+            background-color: #FFBC39;
+            color: #F15333;
+        }
+
+        .menu-nav a {
+            color: #64022D;
+        }
+
+        .menu-nav li:hover {
+            font: bold;
+            transform: scale(1.15);
+            transition: all 300ms;
+            position: relative;
+            color: #F15333;
+        }
+
+        #registro a {
+            color: #64022D;
+        }
+
+        /* DERECHA DEL MENU NAV */
+
+        .botones-nav {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            padding: 20px;
+
+        }
+
+        #registro {
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: #64022D;
+            font-family: poppins;
+        }
+
+        #sesion-boton {
+            background-color: #64022D;
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 20px;
+            border-style: none;
+            color: #F6F0E4;
+            font-family: poppins;
+        }
+
+        #sesion-boton:hover {
+            color: #F15333;
+            background-color: #FFBC39;
+        }
+
+
+        /* button {
+            background-color: #64022D;
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 20px;
+            color: #F6F0E4;
+
+        } */
+
+
+
+        /* CABECERA */
+
+
+        .cabecera {
+            background-image: url(/img/bannerrecetas.png);
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+           /* height: 400px;*/
+
+            display: block;
+            justify-content: center;
+            align-content: center;
+            padding: 50px;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            color: #F6F0E4;
+            font-weight: 700;
+        }
+
+        #txt {
+            display: flex;
+            justify-content: center;
+            color: #F6F0E4;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        #buscador {
+            display: flex;
+            background-color: #F6F0E4;
+            color: #64022D;
+        }
+
+
+
+
+        /* BARRA DE BUSQUEDA */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 150px;
+            margin-right: 150px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        #search-input {
+            flex: 1;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            font-family: poppins;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        #buscar-boton {
+            color: #64022D;
+            background-color: #FFBC39;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-family: poppins;
+            font-size: small;
+            font-weight: 600;
+        }
+
+
+        /* GRID CARDS */
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            flex-wrap: wrap;
+            margin: 40px 20px;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 0 0 200px;
+            margin: 10px;
+
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 4px;
+            /* margin: 10px; */
+        }
+
+        .card text {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 20px 20px;
+            height: 100vh;
+        }
+
+        h3 {
+            color: #64022D;
+        }
+
+        p {
+            color: #64022D;
+            font-size: small;
+            font-weight: 400;
+        }
+
+        /* BOTONES GRID */
+
+        .card-button {
+            background-color: #F15333;
+            color:#F6F0E4;
+            margin-top: 20px;
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-family: poppins;
+
+        }
+
+        .card-button:hover {
+            background-color: #64022d;
+            color: #FFBC39;
+        }
+
+
+        .footer {
+            background-color: #64022d;
+            color: #F6F0E4;
+            padding: 20px;
+            display: flex;
+
+        }
+
+        #txtfooter {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-content: center;
+            font-size: small;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+
+        #txtfooter a {
+            color: #F6F0E4;
+        }
+
+        #txtfooter a:hover {
+            color: #FFBC39;
+        }
+    </style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/img/sofrito-logo.png" alt="Sofrito logo">
+                </a>
+            </div>
+
+            <ul class="menu-nav">
+                <li> <a href="index.html"> Desafíos</a> </li>
+                <li> <a href="recetas.html"> Recetas </a> </li>
+                <li> <a href="index.html">Foro</a> </li>
+                <li> <a href="index.html"> Eventos </a> </li>
+            </ul>
+
+            <ul class="botones-nav">
+                <li id="registro"><a href="perfilusuario.html">  Mi cuenta </a></li>
+                <li> <button id="sesion-boton"> Cerrar sesión </button> </li>
+            </ul>
+
+            <!-- Antes -->
+            <!-- <ul class="botones">
+                <li id="registro"> Mi cuenta </li>
+                <li id="sesion-boton"> Cerrar sesión </button></li>
+            </ul> -->
+
+
+
+
+
+        </div>
+
+
+        <div class="content">
+
+            <div class="cabecera">
+                <h1>Mis recetas</h1>
+
+                <p id="txt">¡Bienvenidx a tu colección personal de sabores!</p>
+                <!-- <br><br><br> -->
+
+                <!-- <button id="buscador"> Buscar más recetas </button> -->
+                <!-- <br><br> -->
+
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar..." id="search-input">
+                    <button id="buscar-boton" type="submit"> Buscar </button>
+                </div>
+
+            </div>
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <img src="/img/carne.webp"
+                        alt="plato de color rojo intenso, acompañado de pan integral, fondo verde">
+                    <div class="text">
+                        <h3> Shakshuka </h3>
+                        <p> Un plato de oriente medio, con fuertes especias y sabor exótico</p>
+                    </div>
+                    
+                    <div class="buttoncard">
+                        <button class="card-button"> Ver receta </button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="card"><img src="/img/verduras.jpg"
+                        alt="plato de verduras, cebolla, brocoli, patatas y boniato">
+                    <div class="text">
+                        <h3>Verde que te quiero verde</h3>
+                        <p>Descubre esta sencilla receta con tan solo 3 pasos</p>
+                    </div>
+                    <div class="buttoncard">
+                        <button class="card-button"> Ver receta </button>
+                    </div>
+                </div>
+
+
+                <div class="card"><img src="/img/macarrones.webp"
+                        alt="plato de macarrones, gambas, tomate cherris, albahaca">
+                    <div class="text">
+                        <h3>Macarrones marinos</h3>
+                        <p>No dejes de probar esta sencilla receta con un sabor explosivo</p>
+                        <button class="card-button">Ver receta </button>
+                    </div>
+                    <div class="buttoncard">
+                        
+                    </div>
+                </div>
+
+
+                <div class="card"><img src="/img/pollo.jpeg" alt="pollo con esparragos, cebollino, salsa de sesamo">
+                    <div class="text">
+                        <h3>Pollo en salsa de sésamo</h3>
+                        <p>Sólo necesitas 3 ingredientes para cocinar esta riquísima receta</p>
+                        <button class="card-button">Ver receta </button>
+                    </div>
+                    <div class="buttoncard">
+                        
+                    </div>
+                </div>
+
+
+                <div class="card"><img src="/img/pollo1.webp" alt="tortellini de setas, algas, esparragos">
+                    <div class="text">
+                        <h3> Tortellini de setas </h3>
+                        <p> Esta receta no te dejará indiferente, receta nivel chef, pero valdrá la pena </p>
+                        
+                    </div>
+                    <div class="buttoncard">
+                        <button class="card-button"> Ver receta </button>
+                    </div>
+                </div>
+
+
+                <!-- <div class="card"><img src="/img/variado.jpeg" alt="tabla de cocina, noodles, tofu, salsa de soja, champiñones, verduras">
+                    <div class="text">
+                        <h3> Noodles de champiñones </h3>
+                        <p> Ingredientes marinados en salsa de soja: un plato que te transportará a Asia </p>
+                        <button class="card-button"> Ver receta </button>
+                    </div> -->
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer">
+            <ul id="txtfooter">
+                <li> Sofrito® 2024 Created by Cocineras </li>
+                <li> Cookies </li>
+                <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
+
+            </ul>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
