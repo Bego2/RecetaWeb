@@ -12,11 +12,12 @@
 
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
 
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
 
         <header>
             <nav class="navbar">
@@ -46,7 +47,11 @@
             <article>
 
                 <section class="section1">
-                    <img class="arroz-img" src="img/arroz.png" alt="arroz con leche en vaso de cristal fondo verde">
+
+                    <div class="arroz-all">
+                        <img class="arroz-img" src="img/arroz.png" alt="arroz con leche en vaso de cristal fondo verde">
+                        <figcaption class="fig-capt"> Delicioso arroz con leche recién hecho </figcaption>
+                    </div>
 
                     <section class="right1">
                         <h1> Arroz con leche </h1>
@@ -63,12 +68,12 @@
                     <h2> Descripción </h2>
 
                     <p class="description"> Hoy, en <strong> Sofrito</strong>, presentamos la clásica receta de Arroz
-                        con leche! Qué cosa.Es risotto hecho postre barato, qué querés que te diga. De las comidas con
+                        con leche! Qué cosa. Es risotto hecho postre barato, qué querés que te diga. De las comidas con
                         arroz, es mi segunda favorita. Así son los postres caseros: bueno y simple, dos veces bueno.
                         Éste arroz con leche es tan bueno, que hasta tiene una canción que lo homenajea.
                     </p>
 
-                    <p>
+                    <p class="description">
                         O sea, encima de ser un postre saludable, ahora nos enteramos que también es un postre
                         económico, y que además está entre los postres fáciles más fáciles de todos. Arroz con leche te
                         amamos! Bueno, me emocioné un poco perdón. Si querés aprender cómo hacer arroz con leche
@@ -78,40 +83,113 @@
 
                 <section class="section3">
 
-                    <section class="section-ingr">
-                        
-                        <h2> Ingredientes </h2>
-                        <ul class="ingredientes">
-                            <li> 100gr de arroz </li>
-                            <li> 1L de leche</li>
-                            <li> 150gr de azúcar</li>
-                            <li> Canela (en rama y en polvo)</li>
-                            <li> Cáscara de limón</li>
-                        </ul>
+                    <div class="bloque-izq">
+                        <section class="section-ingr">
 
-                    </section>
+                            <h2> Ingredientes </h2>
+                            <ul class="ingredientes">
+                                <li> 100gr de arroz </li>
+                                <li> 1L de leche</li>
+                                <li> 150gr de azúcar</li>
+                                <li> Canela (en rama y en polvo)</li>
+                                <li> Cáscara de limón</li>
+                            </ul>
 
-                        <aside>
-                            <section class="as-1">
-                                <h3>La nevera</h3>
-                                <p class="nevera-txt">DE @LOLA.SEVILLA22</p>
-                                <img class="nevera" src="img/nevera.png"
-                                    alt="Nevera llena con productos y bastante fruta y verdura">
-                            </section>
+                        </section>
 
-                            <section class="as-2">
-                                <h3 class="h3-otras">Otras recetas suyas!</h3>
-                                <img class="otras-recetas" src="img/bote.png" alt="Receta 1 bote de encurtidos">
-                                <p class="otras-txt"> Encurtidos divertidos </p>
-                                <img class="otras-recetas" src="img/dulce.png" alt="Receta 2 plato con chuches">
-                                <p class="otras-txt"> Chuches Miffi </p>
-                                <img class="otras-recetas" src="img/pastel.png" alt="Receta 3 deliciosa tarta">
-                                <p class="otras-txt"> Pastel de mandarina </p>
-                            </section>
+                        <section class="section-steps">
 
-                        </aside>
-                   
-              </section>
+                            <h2> El paso a paso </h2>
+                            <p class="steps-txt"> El objetivo es que no esté ni muy líquido ni muy espeso. <br> Vamos a
+                                aprender cómo hacer
+                                arroz
+                                con leche
+                                con todas las letras y con todos los detalles. </p>
+
+                            <ol>
+                                <li> Pon la leche y el arroz en una olla. </li>
+                                <li>Corta con el pelador la cáscara de limón y añadela</li>
+                                <li>Agrega una ramita de canela en rama. </li>
+                                <li> Esta mezcla, antes de ponerla al fuego, la vamos a dejar reposar entre 30 y 60
+                                    minutos.
+                                </li>
+                                <li>A los 30 minutos, ponemos el fuego medio y tapamos hasta que esté cerquita de
+                                    hervir. Remueve cada poco tiempo.
+                                </li>
+                                <li> Prueba el arroz. Si está al dente: agrega azúcar.
+                                </li>
+                                <li>Si el arroz está cocido, apagamos fuego, sacamos los pedazos de canela y de cáscara
+                                    de
+                                    limón.
+                                </li>
+                                <li>Dejamos enfriar en la nevera al menos 20 minutos. Al emplatar espolvoreamos canela.
+                                </li>
+                            </ol>
+                        </section>
+
+
+                        <section class="calificaciones">
+
+                            <h2> Califica tu respuesta</h2>
+
+                            <form class="comment-form">
+
+                                <textarea id="comment" name="comment" rows="4"
+                                    placeholder="¿Qué te ha parecido? Escribe aquí tu respuesta..."></textarea>
+
+                                <button id="boton-re" type="submit"> Enviar</button>
+                            </form>
+
+                            <h4> <strong> Comentarios</strong> (3) </h4>
+
+                            <span class="comment-1">
+                                <img class="img-users" src="img/Greg.png"
+                                    alt="Imagen hombre pelo blanco comiendo noodles">
+
+                                <p> Me encantó, quedó deliciosa </p>
+                            </span>
+
+
+                            <span class="comment-2">
+                                <img class="img-users" src="img/Amelie.png"
+                                    alt="Imagen mujer con bufanda en la cabeza y flores de fondo">
+                                <p> La consistencia perfecta... Es de mis recetas favoritas 💗 </p>
+
+                            </span>
+
+                            <span class="comment-3">
+                                <img class="img-users" src="img/Yaiza.png"
+                                    alt="Imagen mujer con bufanda en la cabeza y flores de fondo">
+                                <p> Woow, muchísimas gracias! A mis amigos les flipó el arroz! </p>
+
+                            </span>
+                        </section>
+                    </div>
+
+                    <aside>
+                        <section class="as-1">
+                            <h3>La nevera</h3>
+                            <p class="nevera-txt">DE @LOLA.SEVILLA22</p>
+                            <img class="nevera" src="img/nevera.png"
+                                alt="Nevera llena con productos y bastante fruta y verdura">
+                        </section>
+
+                        <section class="as-2">
+                            <h3 class="h3-otras">Otras recetas suyas!</h3>
+                            <img class="otras-recetas" src="img/bote.png" alt="Receta 1 bote de encurtidos">
+                            <p class="otras-txt"> Encurtidos divertidos </p>
+                            <img class="otras-recetas" src="img/dulce.png" alt="Receta 2 plato con chuches">
+                            <p class="otras-txt"> Chuches Miffi </p>
+                            <img class="otras-recetas" src="img/pastel.png" alt="Receta 3 deliciosa tarta">
+                            <p class="otras-txt"> Pastel de mandarina </p>
+                        </section>
+
+                    </aside>
+
+
+
+
+                </section>
 
 
             </article>
@@ -121,8 +199,14 @@
 
         </main>
 
-
-
+        <footer class="footer">
+            <ul id="txtfooter">
+                <li> Sofrito® 2024 Created by Cocineras </li>
+                <li> Cookies </li>
+                <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
+            </ul>
+        </footer>
+    </section>
 </body>
 
 </html>

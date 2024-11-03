@@ -1,16 +1,25 @@
-/* SECTION 1 */
+/* SECTION 1 - TITULO DE LA RECETA  */
 
 .section1 {
     display: flex;
-    /* width: 200px; */
     padding: 20px;
 }
 
 .arroz-img {
     display: flex;
     width: 439px;
-    margin-left: 20px;
     border-radius: 9px;
+}
+
+
+.fig-capt {
+    color: #092A0F;
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    font-size: 12px;
+    font-style: italic;
+
 }
 
 .right1 {
@@ -20,7 +29,7 @@
     align-items: center;
     justify-content: center;
 
-    margin-left: 60px;
+  margin-left: 200px; 
     color: #5d032a;
 }
 
@@ -36,7 +45,11 @@ h1 {
     margin-bottom: auto;
 }
 
-/* SECTION 2 */
+.sub-h1 {
+    font-weight: 400;
+}
+
+/* SECTION 2: DESCRIPCION RECETA */
 
 h2 {
     font-size: 32px;
@@ -54,15 +67,14 @@ h2 {
 
 .description {
     margin-bottom: 10px;
-    font-weight: lighter;
+    font-weight: 400;
 
 }
 
 .ingredientes {
     background-color: #FFD8F5;
     color: #ad215b;
-    width: 600px;
-    ;
+    width: 750px;
     list-style: circle;
 
     padding: 20px 20px 20px 30px;
@@ -76,18 +88,126 @@ h2 {
 }
 
 
-/* INGREDIENTES [SECTION 3] + [ASIDE] */
+/* SECCION 3 [INGREDIENTES & PASO A PASO ] + [ASIDE] */
 
 .section3 {
     display: flex;
-    gap: 30px;
+    gap: 150px;
+    width: 750px;
+    background-color: rgb(85, 255, 0);
 }
+
+
 
 .section-ingr {
-    width: 800px;
+    /* width: 800px; */
+    margin-bottom: 50px;
 }
 
-/* ASIDE */
+/* SECCION PASO A PASO  */
+
+.section-steps {
+    line-height: 25px;
+    color: #5d032a;
+    margin-bottom: 50px;
+}
+
+.steps-txt {
+    margin-bottom: 20px;
+}
+
+ol {
+    margin: 20px;
+}
+
+li {
+    margin-bottom: 14px;
+    line-height: 25px;
+}
+
+/* SECCIÓN FORM */
+
+.comment-form {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.comment-form textarea {
+    width: 700px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid #5d032a;
+    color: #092A0F;
+    font-family: poppins;
+    resize: none;
+}
+
+.comment-form textarea::placeholder {
+    color: #6d8470;
+    font-style: italic;
+}
+
+#boton-re {
+    padding: 10px 20px;
+    background-color: #5d032a;
+    color: #fff;
+    border-radius: 20px;
+    font-family: poppins;
+    font-weight: 400;
+}
+
+.comment-form #boton-re:hover {
+    background-color: #200310;
+}
+
+/* SECCION COMENTARIOS  */
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.img-users {
+    width: 60px;
+    border-radius: 100%;
+    margin-right: 12px;
+}
+/* Comentario 1 */
+.comment-1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.comment-1 p {
+    align-self: center;
+}
+/* Comentario 2 */
+.comment-2 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.comment-2 p {
+    align-self: center;
+}
+/* Comentario 3 */
+.comment-3 {
+    display: flex;
+}
+
+.comment-3 p {
+    align-self: center;
+}
+
+
+/* -> ASIDE */
 
 h3 {
     color: #092A0F;
@@ -133,4 +253,3 @@ h3 {
     font-size: small;
     margin-bottom: 20px;
 }
-
