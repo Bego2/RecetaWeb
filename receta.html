@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 </head>
 
 <body>
@@ -28,7 +30,7 @@
 
                 <ul class="nav-links">
                     <li> <a href="index.html"> Desafíos</a> </li>
-                    <li> <a href="recetas.html" id="recetas"> Recetas </a> </li>
+                    <li> <a href="recetas.html" id="recetas"> Recetas</a> </li>
                     <li> <a href="index.html">Foro</a> </li>
                     <li> <a href="index.html"> Eventos </a> </li>
                 </ul>
@@ -58,8 +60,26 @@
 
                         <p class="author"> <strong> RECETA DE @LOLA.SEVILLA </strong> </p>
 
-                        <p class="sub-h1"> Sencilla, clásica y barata. <br>
-                            Perfecta para los domingos.</p>
+                        <p class="sub-h1"> La receta de la abuela <br> La sencilla, clásica y barata</p>
+
+                        <img class="stars" src="img/stars.png" alt="Reseña de 4 estrellas sobre cinco">
+
+                        <section class="sub-txt">
+                            <a href="#section3">
+                                <span class="flecha">
+                                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <p> <strong>Ir a la receta</strong> </p>
+
+                                </span>
+                            </a>
+                            <span class="imprimir" onclick="window.print()">
+                                <i class="fa fa-print" aria-hidden="true"></i>
+                                <p> <strong>Imprimir</strong> </p>
+
+                            </span>
+                        </section>
+
+
                     </section>
                 </section>
 
@@ -67,21 +87,21 @@
 
                     <h2> Descripción </h2>
 
-                    <p class="description"> Hoy, en <strong> Sofrito</strong>, presentamos la clásica receta de Arroz
-                        con leche! Qué cosa. Es risotto hecho postre barato, qué querés que te diga. De las comidas con
+                    <p class="description"> Hoy, en <strong> Sofrito</strong>, presentamos la clásica receta de Arroz
+                        con leche! Qué cosa. Es risotto hecho postre barato, qué querés que te diga. De las comidas con
                         arroz, es mi segunda favorita. Así son los postres caseros: bueno y simple, dos veces bueno.
                         Éste arroz con leche es tan bueno, que hasta tiene una canción que lo homenajea.
                     </p>
 
                     <p class="description">
                         O sea, encima de ser un postre saludable, ahora nos enteramos que también es un postre
-                        económico, y que además está entre los postres fáciles más fáciles de todos. Arroz con leche te
-                        amamos! Bueno, me emocioné un poco perdón. Si querés aprender cómo hacer arroz con leche
+                        económico, y que además está entre los postres fáciles más fáciles de todos. Arroz con leche te
+                        amamos! Bueno, me emocioné un poco perdón. Si querés aprender cómo hacer arroz con leche
                         cremoso, seguí los siguientes pasos porque esta receta no falla, queda cremoso siempre. </p>
 
                 </section>
 
-                <section class="section3">
+                <section id="section3">
 
                     <div class="bloque-izq">
                         <section class="section-ingr">
@@ -101,10 +121,7 @@
 
                             <h2> El paso a paso </h2>
                             <p class="steps-txt"> El objetivo es que no esté ni muy líquido ni muy espeso. <br> Vamos a
-                                aprender cómo hacer
-                                arroz
-                                con leche
-                                con todas las letras y con todos los detalles. </p>
+                                aprender cómo hacer arroz con leche con todas las letras y con todos los detalles. </p>
 
                             <ol>
                                 <li> Pon la leche y el arroz en una olla. </li>
@@ -194,10 +211,11 @@
 
             </article>
 
-
-
-
         </main>
+
+        <div class="sticky-image">
+            <img src="img/cookie.png" alt="Imagen de una cookie en la esquina inferior derecha">
+        </div>
 
         <footer class="footer">
             <ul id="txtfooter">

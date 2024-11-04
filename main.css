@@ -1,8 +1,13 @@
-/* SECTION 1 - TITULO DE LA RECETA  */
+main {
+    background-color: #f5efe3;
+}
+
+/* SECTION 1 - CABECERA DE LA RECETA  */
 
 .section1 {
     display: flex;
     padding: 20px;
+
 }
 
 .arroz-img {
@@ -10,7 +15,6 @@
     width: 439px;
     border-radius: 9px;
 }
-
 
 .fig-capt {
     color: #092A0F;
@@ -45,9 +49,44 @@ h1 {
     margin-bottom: auto;
 }
 
-.sub-h1 {
-    font-weight: 400;
+.stars {
+ width: 150px;
+
 }
+.sub-h1 {
+    font-size: 18px;    
+    margin-bottom: auto; 
+    text-align: center;
+
+}
+
+.sub-txt {
+    display: inline-flex;
+    font-size: 16px;
+}
+
+.flecha {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.flecha i {
+    padding-right: 15px;
+}
+
+
+.imprimir {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.imprimir i {
+    padding-right: 15px;
+}
+
 
 /* SECTION 2: DESCRIPCION RECETA */
 
@@ -90,18 +129,16 @@ h2 {
 
 /* SECCION 3 [INGREDIENTES & PASO A PASO ] + [ASIDE] */
 
-.section3 {
+#section3 {
     display: flex;
     gap: 150px;
     width: 750px;
-    background-color: rgb(85, 255, 0);
+    
 }
 
-
-
 .section-ingr {
-    /* width: 800px; */
     margin-bottom: 50px;
+    padding-left: 20px;
 }
 
 /* SECCION PASO A PASO  */
@@ -110,6 +147,7 @@ h2 {
     line-height: 25px;
     color: #5d032a;
     margin-bottom: 50px;
+    padding-left: 20px;
 }
 
 .steps-txt {
@@ -168,6 +206,11 @@ h2 {
 
 /* SECCION COMENTARIOS  */
 
+.calificaciones {
+    padding-left: 20px;
+    margin-bottom: 50px;
+    color:#5d032a;
+}
 h4 {
     font-size: 20px;
     font-weight: 300;
@@ -182,7 +225,8 @@ h4 {
 /* Comentario 1 */
 .comment-1 {
     display: flex;
-    margin-bottom: 20px;
+   
+    margin-bottom: 35px;
 }
 
 .comment-1 p {
@@ -191,7 +235,7 @@ h4 {
 /* Comentario 2 */
 .comment-2 {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .comment-2 p {
@@ -213,6 +257,7 @@ h3 {
     color: #092A0F;
     font-size: 20px;
     line-height: 1;
+    margin-top: 10px;
 }
 
 .nevera-txt {

@@ -36,5 +36,20 @@
 }
 
 #txtfooter a:hover {
-    color: #FFBC39;
+    color:#FFD8F5;
 }
+
+/* COOKIES - STICKY */
+.sticky-image img {
+    width: 70px;      
+
+}
+
+.sticky-image {
+    position: fixed;
+    bottom: 0;         
+    right: 0;            
+    margin: 30px;    
+    background: transparent;  
+}
+
