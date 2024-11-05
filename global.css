@@ -20,11 +20,11 @@
 
  /* NAV BAR */
 
- .logo {
+ .header__logo {
      padding-right: 20px;
  }
 
- .navbar {
+ .header__navbar {
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -32,7 +32,7 @@
      background-color: #f5efe3;
  }
 
- .nav-links li {
+ .header__links-item {
 
      display: inline;
      justify-content: center;
@@ -41,12 +41,12 @@
      /* margin: 0px 20px 0px 20px; */
  }
 
- .nav-links li a {
+ .header__link {
      color: #5d032a;
      margin: 0px 12px 0px 12px;
  }
 
- .nav-links li #recetas {
+ .header__link--active {
      text-decoration: underline;
      text-underline-offset: 4px;
  }
