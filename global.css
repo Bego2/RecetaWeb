@@ -51,19 +51,19 @@
      text-underline-offset: 4px;
  }
 
- .nav-derecha {
+ .header__actions {
      display: flex;
      align-items: center;
      gap: 20px;
      padding-left: 20px;
  }
 
- .nav-derecha .unete {
+ .header__action--unete {
      color: #5d032a;
      font-weight: 400;
  }
 
- .nav-derecha .boton {
+ .header__action--acceso {
      padding: 10px 20px;
      background-color: #5d032a;
      color: #fff;
@@ -71,6 +71,6 @@
      font-weight: 400;
  }
 
- .nav-derecha .boton:hover {
+ .header__actions .boton:hover {
      background-color: #200310;
  }
